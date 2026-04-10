@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Новенький — История гангстера</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cover">
+    <div class="cyber-grid"></div>
+    <div class="skyline"></div>
+    <div class="rain"></div>
+    <div class="gangster-shadow"></div>
+
+    <div class="settings-btn" id="settingsBtn">
+        <div class="settings-icon">⚙️</div>
+    </div>
+
+    <div class="title-block">
+        <div class="main-title">НОВЕНЬКИЙ</div>
+        <div class="sub">ИСТОРИЯ ГАНГСТЕРА</div>
+
+        <div class="start-btn" id="startGameBtn">
+            <div class="cylinder">
+                <div class="chamber-hole"></div>
+                <div class="trigger"></div>
+            </div>
+            <div class="btn-text">▶ НАЧАТЬ</div>
+        </div>
+        
+        <div class="episodes-btn" id="episodesBtn">
+            <div class="episodes-btn-text">📜 СПИСОК СЕРИЙ</div>
+        </div>
+    </div>
+</div>
+
+<div class="episodes-panel" id="episodesPanel">
+    <div class="episodes-header">
+        <span class="episodes-title">⚡ ВЫБЕРИ СЕРИЮ ⚡</span>
+        <button class="close-episodes" id="closeEpisodesBtn">✕</button>
+    </div>
+    <div class="episodes-list" id="episodesList"></div>
+</div>
+
+<div class="settings-panel" id="settingsPanel">
+    <div class="settings-header">
+        <span class="settings-title">⚙️ НАСТРОЙКИ</span>
+        <button class="close-settings" id="closeSettingsBtn">✕</button>
+    </div>
+    <div class="settings-content">
+        <div class="setting-item">
+            <div class="setting-label">
+                <span class="setting-icon">🎵</span>
+                <span>Фоновая музыка</span>
+            </div>
+            <label class="toggle-switch">
+                <input type="checkbox" id="musicToggle" checked>
+                <span class="toggle-slider"></span>
+            </label>
+        </div>
+        <div class="setting-item">
+            <div class="setting-label">
+                <span class="setting-icon">🔊</span>
+                <span>Громкость</span>
+            </div>
+            <div class="volume-control">
+                <span class="volume-icon">🔉</span>
+                <input type="range" id="volumeSlider" min="0" max="100" value="50">
+                <span class="volume-icon">🔊</span>
+                <span class="volume-value" id="volumeValue">50%</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
